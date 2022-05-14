@@ -2,6 +2,7 @@ package com.gpgs.controllers;
 
 import com.gpgs.model.Empresa;
 import com.gpgs.repositories.EmpresaRepository;
+import com.gpgs.services.EmpresaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,19 +13,19 @@ import java.util.List;
 public class EmpresasController {
 
     @Autowired
-    private EmpresaRepository empresaRepository;
+    private EmpresaService empresaService;
 
     @GetMapping
     public List<Empresa> getEmpresas(){
 
-      return empresaRepository.findAll();
+      return empresaService.getEmpresas();
 
     }
 
     @PostMapping
     public Empresa addEmpresa(@RequestBody Empresa empresa){
 
-        return empresaRepository.save(empresa);
+        return empresaService.addEmpresas(empresa);
 
     }
 
