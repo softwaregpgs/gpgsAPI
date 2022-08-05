@@ -11,7 +11,7 @@
 	<groupId>com</groupId>
 	<artifactId>gpgs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>gpgs</name>
 	<description>Grandes problemas, grandes soluciones</description>
 	<properties>
