@@ -16,6 +16,8 @@ public class ClientesController {
     @Autowired
     private ClienteService clienteService;
 
+    private int estonoseusa;
+
     @GetMapping
     public List<Cliente> getClientes(){
 
