@@ -10,4 +10,5 @@ public interface ClienteService {
 
     public List<Cliente> getClientes();
     public Cliente addClientes(Cliente cliente);
+	public Cliente findClienteByEmail();
 }

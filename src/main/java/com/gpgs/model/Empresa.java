@@ -27,5 +27,12 @@ public class Empresa {
     private String enlaceWeb;
     private List<String> categorias;
     private List<String> fotos;
+    private String password;
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 }
